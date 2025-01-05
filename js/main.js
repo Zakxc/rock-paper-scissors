@@ -5,15 +5,18 @@ function o(event) {
     max = Math.floor(max);
     return Math.floor(Math.random() * (max - min + 1)) + min;
   }
-  let c=getRandomInt(1,3) , b = 2 ;
+  let c=getRandomInt(1,3) , b = 2;
   if (b==c){
-    alert("Ничья: противник выбрал ножницы")
+    location.href = '../html/s.html'
+ 
   }
   if (b>c) {
-    alert("победа: противник выбрал бумагу")
+    location.href = '../html/ss.html'
+
   }
   if (b<c) {
-    alert("проигрыш: противник выбрал камень")
+    location.href = '../html/sss.html'
+
   }
 }
 function d(event) {
@@ -25,13 +28,13 @@ function d(event) {
   }
   let c=getRandomInt(1,3) , b = 2 ;
   if (b==c){
-    alert("Ничья: противник выбрал бумагу")
+    location.href = '../html/p.html'
   }
   if (b>c) {
-    alert("победа: противник выбрал камень")
+    location.href = '../html/pp.html'
   }
   if (b<c) {
-    alert("проигрыш: противник выбрал ножницы")
+    location.href = '../html/ppp.html'
   }
 }
 function s(event) {
@@ -41,14 +44,15 @@ function s(event) {
     max = Math.floor(max);
     return Math.floor(Math.random() * (max - min + 1)) + min;
   }
-  let c=getRandomInt(1,3) , b = 2 ;
+
+  let c=getRandomInt(1,3) , b = 2;
   if (b==c){
-    alert("Ничья: противник выбрал камень")
+    location.href = '../html/r.html'
   }
   if (b>c) {
-    alert("победа: противник выбрал ножницы")
+    location.href = '../html/rr.html'
   }
   if (b<c) {
-    alert("проигрыш: противник выбрал бумагу")
+    location.href = '../html/rrr.html'
   }
 }
